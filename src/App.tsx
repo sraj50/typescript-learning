@@ -4,7 +4,8 @@ import "./App.css";
 import ToggleToDo from "./api/ToggleTodo";
 
 function App() {
-  ToggleToDo();
+  const toDo = ToggleToDo({ id: 1, text: "...", done: true });
+  console.log(toDo);
   return (
     <div className="App">
       <header className="App-header">
